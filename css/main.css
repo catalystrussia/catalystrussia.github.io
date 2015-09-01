@@ -1,0 +1,52 @@
+body,
+html {
+  height: 100%;
+}
+body {
+  padding-top: 3vh;
+  background: #d3dfd5;
+  background: url("../img/Teambuilding-Success-Tips.jpg") 0 100% no-repeat, linear-gradient(to right, #d3dfd5 0%, #dae5d7 34%, #dae5d7 72%, #cfdbd1 100%);
+  background-size: 100%;
+}
+.tab-icon {
+  line-height: inherit;
+}
+.question {
+  visibility: hidden;
+  position: absolute;
+  left: 0.75rem;
+  right: 0.75rem;
+  transition: all .3s;
+  -webkit-transform: translateX(40px);
+  transform: translateX(40px);
+  opacity: 0;
+}
+.question.active {
+  visibility: visible;
+  transition: all .3s .3s;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
+}
+.question.inactive {
+  -webkit-transform: translateX(-40px);
+  transform: translateX(-40px);
+  transition: all .3s !important;
+}
+.col {
+  position: relative;
+}
+.tabs .tab a.ready {
+  transition: all .3s;
+  color: #fff;
+  background-color: #00bfa5;
+}
+.tabs .indicator {
+  height: 4px;
+  background-color: #e57373;
+}
+.logo {
+  background: url("../img/Catalyst-logo.png") top no-repeat;
+  background-size: 160px;
+  height: 110px;
+}

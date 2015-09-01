@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Team building</title>
+
+    <!--Import materialize.css-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+    <link type="text/css" rel="stylesheet" href="css/main.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+    <div class="container">
+        <div class="row logo"></div>
+        <div class="row">
+            <div class="col s6 offset-s3">
+                <ul class="tabs z-depth-1">
+                    <li class="tab col s3"><a href="#" data-id="1" class="active tab1">1</a></li>
+                    <li class="tab col s3"><a href="#" data-id="2" class="tab2">2</a></li>
+                    <li class="tab col s3"><a href="#" data-id="3" class="tab3">3</a></li>
+                    <li class="tab col s3"><a href="#" data-id="4" class="tab4">4</a></li>
+                    <li class="tab col s3"><a href="#" data-id="5" class="tab5">5</a></li>
+                    <span class="tab col s3 hide"><a href="#" data-id="6" class="tab6"><i class="material-icons Small tab-icon">done</i></a></span>
+                </ul>
+
+                <div class="card-panel hoverable question active" id="test1">
+                    <p class="card-title">Сколько сотрудников в вашей команде?</p>
+                    <p>
+                        <input class="with-gap" name="1" type="radio" id="test1_1" value="1" checked/>
+                        <label for="test1_1">до 30</label>
+                    </p>
+                    <p>
+                        <input class="with-gap" name="1" type="radio" id="test1_2" value="2"/>
+                        <label for="test1_2">от 30 до 50</label>
+                    </p>
+                    <p>
+                        <input class="with-gap" name="1" type="radio" id="test1_3" value="3"/>
+                        <label for="test1_3">от 50 до 100</label>
+                    </p>
+                    <p>
+                        <input class="with-gap" name="1" type="radio" id="test1_4" value="4"/>
+                        <label for="test1_4">свыше 100</label>
+                    </p>
+                </div>
+                <div class="card-panel hoverable question" id="test2">
+                    <p class="card-title">Как ваша команда любит отдыхать?</p>
+                    <p>
+                        <input class="with-gap" name="2" type="radio" id="test2_1"  value="1" checked />
+                        <label for="test2_1">активно</label>
+                    </p>
+                    <p>
+                        <input class="with-gap" name="2" type="radio" id="test2_2"  value="2" />
+                        <label for="test2_2">на природе</label>
+                    </p>
+                    <p>
+                        <input class="with-gap" name="2" type="radio" id="test2_3"  value="3" />
+                        <label for="test2_3">интеллектуально</label>
+                    </p>
+                    <p>
+                        <input class="with-gap" name="2" type="radio" id="test2_4"  value="4" />
+                        <label for="test2_4">party hard</label>
+                    </p>
+                </div>
+                <div class="card-panel hoverable question" id="test3">
+                    <p>Средняя продолжительность работы сотрудника?</p>
+                    <p>
+                        <input class="with-gap" name="3" type="radio" id="test3_1"  value="1" checked />
+                        <label for="test3_1">от 3 месяцев до 6 месяцев</label>
+                    </p>
+                    <p>
+                        <input class="with-gap" name="3" type="radio" id="test3_2" value="2" />
+                        <label for="test3_2">от 6 месяцев до 1 года</label>
+                    </p>
+                    <p>
+                        <input class="with-gap" name="3" type="radio" id="test3_3"  value="3" />
+                        <label for="test3_3">от 1 года до 3 лет</label>
+                    </p>
+                    <p>
+                        <input class="with-gap" name="3" type="radio" id="test3_4"  value="4" />
+                        <label for="test3_4">от 3 лет</label>
+                    </p>
+                </div>
+                <div class="card-panel hoverable question" id="test4">
+                    <p class="card-title">Средний возраст сотрудника?</p>
+                    <p>
+                        <input class="with-gap" name="4" type="radio" id="test4_1"  value="1" checked/>
+                        <label for="test4_1">25 лет</label>
+                    </p>
+                    <p>
+                        <input class="with-gap" name="4" type="radio" id="test4_2"  value="2" />
+                        <label for="test4_2">30 лет</label>
+                    </p>
+                    <p>
+                        <input class="with-gap" name="4" type="radio" id="test4_3"  value="3" />
+                        <label for="test4_3">35 лет</label>
+                    </p>
+                    <p>
+                        <input class="with-gap" name="4" type="radio" id="test4_4"  value="4" />
+                        <label for="test4_4">40 лет</label>
+                    </p>
+                </div>
+                <div class="card-panel hoverable question" id="test5">
+                    <p>Какие качества вы цените в своих сотрудниках?</p>
+                    <p>
+                        <input class="with-gap" name="5" type="radio" id="test5_1"  value="1" checked />
+                        <label for="test5_1">креативность</label>
+                    </p>
+                    <p>
+                        <input class="with-gap" name="5" type="radio" id="test5_2"  value="2" />
+                        <label for="test5_2">коммуникабельность</label>
+                    </p>
+                    <p>
+                        <input class="with-gap" name="5" type="radio" id="test5_3"  value="3" />
+                        <label for="test5_3">стратегическое мышление</label>
+                    </p>
+                    <p>
+                        <input class="with-gap" name="5" type="radio" id="test5_4"  value="4" />
+                        <label for="test5_4">трудолюбие</label>
+                    </p>
+                </div>
+                <div class="card-panel hoverable question center" id="test6">
+                    <h5 class="light">Спасибо! Ваша индивидуальная программа:</h5><br>
+                    <a href="#" id="program-link" target="_blank" class="btn-large waves-effect waves-light btn">
+                        <i class="material-icons left">done</i> Получить программу
+                    </a><br><br>
+                    <p>В качестве бонуса мы также дарим Вам: <br> <span class="red-text lighten-1">бесплатную фотосессию</span> первого совместного мероприятия!</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
